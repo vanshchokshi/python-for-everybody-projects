@@ -12,9 +12,5 @@ for line in open_file:
         count = count + 1
         value = float(line.split(":")[1])
         total = total + value
-if count == 0:
-    print("No matching lines found")
-else:
-    ans = total / count
-    print("Average spam confidence:", ans)
-print("Average spam confidence:",ans)
+    average = total/count
+print("Average spam confidence:", average)
